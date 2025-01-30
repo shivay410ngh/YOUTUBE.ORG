@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Signup Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+    input[type="email"], input[type="password"] {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>YouTube Signup Demo</h1>
+  <form action="signup_process.php" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <button type="submit">Sign Up</button>
+  </form>
+</body>
+</html>
